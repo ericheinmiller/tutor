@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'WorkSansSemi';
+  src: url('../fonts/Work_Sans/WorkSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'WorkSansMedium';
+  src: url('../fonts/Work_Sans/WorkSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'WorkSansRegular';
+  src: url('../fonts/Work_Sans/WorkSans-Regular.ttf');
+}
+
+.font-worksans-semi {
+  font-family: WorkSansSemi;
+}
+
+.font-worksans-medium {
+  font-family: WorkSansMedium;
+}
+
+.font-worksans-regular {
+  font-family: WorkSansRegular;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image-star {
+  margin: 0px 6px;
+}
+
+.image-book {
+  margin-bottom: 24px;
+  padding-left: 35px;
+}
+
+.h-selected {
+  .button-compliment__image, .button-compliment__text {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(0%) hue-rotate(257deg) brightness(114%) contrast(100%);
+  }
+  background-color: #2cc6d0;
+}
+
+.h-margin-top-60 {
+  margin-top: 60px;
+}
+
+@media (max-width: 500px) {
+  .image-book {
+    margin-bottom: 24px;
+    padding-left: 35px;
+    width: 100px;
+  }
+}

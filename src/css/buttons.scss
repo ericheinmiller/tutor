@@ -1,0 +1,84 @@
+.button {
+  border-radius: 100px;
+  border: solid 2px #2cc6d0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-start {
+  width: 101px;
+  height: 34px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.button-start__text {
+  font-size: 12px;
+  color: #2cc6d0;
+}
+
+.button-cancel {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.button-confirm {
+  width: 149px;
+  height: 40px;
+  background-color: #2cc6d0;
+  position: relative;
+}
+
+.button-confirm__shadow {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  z-index: -1;
+  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-confirm__text {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.button-compliment {
+  cursor: pointer;
+  width: 88px;
+  height: 102px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    .button-compliment__image, .button-compliment__text {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(0%) hue-rotate(257deg) brightness(114%) contrast(100%);
+    }
+    background-color: #2cc6d0;
+  }
+}
+
+.button-compliment__text {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.83px;
+  text-align: center;
+  color: #2cc6d0;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  width: 65px;
+}
+
+@media (max-width: 500px) {
+  .button-start {
+    width: 101px;
+    height: 34px;
+    margin-top: 36px;
+    margin-bottom: 73px;
+  }
+}

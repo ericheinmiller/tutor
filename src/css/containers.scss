@@ -1,0 +1,50 @@
+.container-star {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-compliment-title {
+  width: 488px;
+  margin-bottom: 12px;
+}
+
+.container-main-buttons {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 86px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 238px;
+}
+
+.container-compliment-form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+.container-compliment-form-buttons__scroll {
+  width: 488px;
+}
+
+@media (max-width: 500px) {
+  .container-compliment-form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 488px;
+  }
+  .container-compliment-title {
+    width: 288px;
+  }
+
+  .container-compliment-form-buttons__scroll {
+    overflow-x: scroll;
+    width: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

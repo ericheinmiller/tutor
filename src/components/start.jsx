@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default () => {
   useEffect(() => {
     window.scrollTo({
-      top: 1000,
+      top: 0,
       behavior: 'smooth',
     });
   }, []);
